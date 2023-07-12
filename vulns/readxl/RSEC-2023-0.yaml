@@ -1,5 +1,6 @@
 id: RSEC-2023-0
-details: TODO
+details: An issue was discoverered in in function xls_getWorkSheet in xls.c in libxls 1.6.2, allows attackers to cause a
+ denial of service, via a crafted XLS file.
 affected:
 - package:
     name: readxl
@@ -20,5 +21,5 @@ references:
   url: https://github.com/libxls/libxls/issues/94
 aliases:
 - CVE-2021-27836
-modified: "2023-07-12T16:54:19.6NZ"
+modified: "2023-07-12T17:32:03.6NZ"
 published: "2023-07-12T16:54:19.6NZ"
