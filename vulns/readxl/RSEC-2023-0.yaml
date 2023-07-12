@@ -13,7 +13,7 @@ affected:
   versions:
   - 0.1.0
   - 0.1.1
-  - 1.1.0
+  - 1.0.0
 references:
 - type: WEB
   url: https://security-tracker.debian.org/tracker/source-package/r-cran-readxl
