@@ -1,7 +1,7 @@
 id: RSEC-2023-2
-details: The readxl R package, version not specified, is exposed to a vulnerability owing to its underlying use of
-  libxls library version 1.6.2. The vulnerability originates in the xls_getWorkSheet function within xls.c in libxls.
-  Attackers can exploit this flaw by utilizing a specially crafted XLS file, leading to a Denial of Service (DoS)
+details: The readxl R package is exposed to a vulnerability owing to its underlying use of libxls library version 1.6.2.
+  The vulnerability originates in the xls_getWorkSheet function within xls.c in libxls. Attackers can exploit this flaw
+  by utilizing a specially crafted XLS file, leading to a Denial of Service (DoS)
   attack.
 affected:
 - package:

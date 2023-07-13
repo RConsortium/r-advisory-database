@@ -1,12 +1,12 @@
 id: RSEC-2023-1
-details: The readxl R package, with an unspecified version, has been found susceptible to vulnerabilities due to its
-  dependency on libxls library version 1.4.0. Two distinct memory management issues were discovered in the read_MSAT and
-  read_MSAT_body functions within the ole.c component of libxls. The first vulnerability is a double-free flaw in the
-  read_MSAT function, which could be exploited by an attacker using a crafted file to cause a Denial of Service (DoS),
-  resulting in an application crash. This vulnerability is different from CVE-2017-2897. The second vulnerability is an
-  invalid free flaw in the read_MSAT_body function. This issue, stemming from inconsistent memory management in the
-  ole2_read_header function, allows attackers to trigger a DoS, application crash, or possibly an unspecified impact
-  through a specially crafted file.
+details: The readxl R package has been found susceptible to vulnerabilities due to its dependency on libxls library
+  version 1.4.0. Two distinct memory management issues were discovered in the read_MSAT and read_MSAT_body functions
+  within the ole.c component of libxls. The first vulnerability is a double-free flaw in the read_MSAT function, which
+  could be exploited by an attacker using a crafted file to cause a Denial of Service (DoS), resulting in an application
+  crash. This vulnerability is different from CVE-2017-2897. The second vulnerability is an invalid free flaw in the
+  read_MSAT_body function. This issue, stemming from inconsistent memory management in the ole2_read_header function,
+  allows attackers to trigger a DoS, application crash, or possibly an unspecified impact through a specially crafted
+  file.
 affected:
 - package:
     name: readxl
