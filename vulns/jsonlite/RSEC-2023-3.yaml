@@ -1,0 +1,60 @@
+id: RSEC-2023-3
+details: The jsonlite R package is exposed to a vulnerability due to its use of yajl library version 2.1.0.
+  The vulnerability originates from the yajl_tree_parse function within yajl. Attackers can exploit this flaw
+  to cause a memory leak, which will result in out-of-memory in server and lead to a crash.
+affected:
+- package:
+    name: jsonlite
+    ecosystem: CRAN
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 0.9.12
+  versions:
+  - 0.9.12
+  - 0.9.13
+  - 0.9.14
+  - 0.9.15
+  - 0.9.16
+  - 0.9.17
+  - 0.9.18
+  - 0.9.19
+  - 0.9.20
+  - 0.9.21
+  - 0.9.22
+  - 1.0
+  - 1.1
+  - 1.2
+  - 1.3
+  - 1.4
+  - 1.5
+  - 1.6
+  - 1.6.1
+  - 1.7.0
+  - 1.7.2
+  - 1.7.3
+  - 1.8.0
+  - 1.8.1
+  - 1.8.2
+  - 1.8.3
+  - 1.8.4
+  - 1.8.5
+  - 1.8.6
+  - 1.8.7
+references:
+- type: WEB
+  url: https://github.com/jeroen/jsonlite/pull/421
+- type: WEB
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-33460
+- type: WEB
+  url: https://github.com/lloyd/yajl/issues/250
+- type: WEB
+  url: https://lists.debian.org/debian-lts-announce/2023/07/msg00000.html
+- type: WEB
+  url: https://lists.debian.org/debian-lts-announce/2023/07/msg00013.html
+- type: WEB
+  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KLE3C4CECEJ4EUYI56KXI6OWACWXX7WN/
+aliases:
+- CVE-2023-33460
+modified: "2023-07-18T04:37:21.600Z"
+published: "2023-07-18T04:37:21.600Z"
