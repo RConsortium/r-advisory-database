@@ -1,0 +1,58 @@
+id: RSEC-2023-0
+details: The readxl R package, versions 0.1.0 to 1.0.0, is vulnerable to multiple attack vectors due to the underlying
+  use  of the libxls library. Several exploitable vulnerabilities have been identified in different functions of libxls
+  versions 1.3.4 and 1.4. These include out-of-bounds write and stack based buffer overflow vulnerabilities in the
+  xls_mergedCells and xls_getfcell functions respectively. Furthermore, integer overflow vulnerabilities exist in the
+  xls_preparseWorkSheet and xls_appendSST functions when handling MULBLANK, MULRK records and a shared string table
+  (SST). An additional out-of-bounds vulnerability has been identified in the xls_addCell function when it processes a
+  formula record. All these vulnerabilities can lead to memory corruption, potentially resulting in remote code
+  execution. The exploit is triggered when a specially crafted XLS file, possibly sent by an attacker, is processed by
+  these vulnerable functions.
+affected:
+- package:
+    name: readxl
+    ecosystem: CRAN
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 0.1.0
+    - fixed: 1.1.0
+  versions:
+  - 0.1.0
+  - 0.1.1
+  - 1.0.0
+references:
+- type: WEB
+  url: https://readxl.tidyverse.org/news/index.html#readxl-110
+- type: WEB
+  url: https://github.com/tidyverse/readxl/issues/441
+- type: WEB
+  url: https://github.com/tidyverse/readxl/pull/442
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2017-2896
+- type: WEB
+  url: https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0403
+- type: WEB
+  url: https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0404
+- type: WEB
+  url: https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0426
+- type: WEB
+  url: https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0460
+- type: WEB
+  url: https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0461
+- type: WEB
+  url: https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0462
+- type: WEB
+  url: https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0463
+- type: WEB
+  url: https://github.com/evanmiller/libxls/issues/34
+aliases:
+- CVE-2017-2896
+- CVE-2017-2897
+- CVE-2017-2919
+- CVE-2017-12108
+- CVE-2017-12109
+- CVE-2017-12110
+- CVE-2017-12111
+modified: "2023-07-13T14:22:58.6NZ"
+published: "2023-07-13T14:22:58.6NZ"
