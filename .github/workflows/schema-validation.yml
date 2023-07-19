@@ -1,0 +1,39 @@
+name: Schema Validation
+
+on:
+  pull_request:
+    paths:
+      - '**.yaml'
+  push:
+    branches:
+      - 'main'
+    paths:
+      - '**.yaml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: |
+        npm install -g ajv-cli js-yaml
+
+    - name: Download schema
+      run: |
+        curl https://raw.githubusercontent.com/ossf/osv-schema/main/validation/schema.json --output schema.json
+
+    - name: Validate YAML files
+      run: |
+        for file in $(find . -name "*.yaml"); do
+          npx js-yaml $file > temp.json
+          ajv validate -s schema.json -d temp.json
+        done
