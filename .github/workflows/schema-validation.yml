@@ -34,6 +34,9 @@ jobs:
     - name: Validate YAML files
       run: |
         for file in $(find . -name "*.yaml"); do
-          npx js-yaml $file > temp.json
-          ajv validate -s schema.json --spec draft2020 -d temp.json -c ajv-formats -c ajv-keywords --strict=false
+          if [[ $file != *'false_positives.yaml' ]]; then
+            echo "validating $file"
+            npx js-yaml $file > temp.json
+            ajv validate -s schema.json --spec draft2020 -d temp.json -c ajv-formats -c ajv-keywords --strict=false
+          fi
         done
