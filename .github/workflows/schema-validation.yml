@@ -25,7 +25,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        npm install -g ajv-cli js-yaml
+        npm install -g ajv-cli js-yaml ajv-keywords ajv-for
 
     - name: Download schema
       run: |
@@ -35,5 +35,5 @@ jobs:
       run: |
         for file in $(find . -name "*.yaml"); do
           npx js-yaml $file > temp.json
-          ajv validate -s schema.json -d temp.json
+          ajv validate -s schema.json --spec draft2020 -d temp.json -c ajv-formats -c ajv-keywords --strict=false
         done
