@@ -25,7 +25,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        npm install -g ajv-cli js-yaml ajv-keywords ajv-for
+        npm install -g ajv-cli js-yaml ajv-keywords ajv-formats
 
     - name: Download schema
       run: |
