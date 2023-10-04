@@ -1,0 +1,31 @@
+id: RSEC-2023-3
+details: The igraph R package, through version 0.7.1, is susceptible to a vulnerability identified in the
+  igraph_i_strdiff function within igraph_trie.c. This vulnerability can lead to a NULL pointer dereference,
+  potentially exploited by attackers to cause a denial of service, resulting in an application crash.
+  Users of the igraph package should take necessary precautions and consider updating to a patched version to
+  mitigate this security risk.
+affected:
+- package:
+    name: igraph
+    ecosystem: CRAN
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 0.7.1
+    - fixed: 1.2.2-2
+  versions:
+  - 0.7.1
+  - 1.0.0
+  - 1.0.1
+  - 1.1.1
+  - 1.1.2
+  - 1.2.1
+references:
+- type: WEB
+  url: https://github.com/igraph/igraph/issues/1141
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2018-20349
+aliases:
+- CVE-2018-20349
+modified: "2023-10-04T03:23:51.600Z"
+published: "2023-10-04T03:23:51.600Z"
