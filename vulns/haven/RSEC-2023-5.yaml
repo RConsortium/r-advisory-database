@@ -1,0 +1,38 @@
+id: RSEC-2023-5
+details: The haven R package is exposed to multiple vulnerabilities due to issues in its underlying ReadStat library.
+  The specific flaws include an infinite loop condition, a memory leak associated with an iconv_open call, and a
+  heap-based buffer over-read via an unterminated string. Exploitation of these vulnerabilities could lead to Denial of
+  Service or other undefined behaviors.
+affected:
+- package:
+    name: haven
+    ecosystem: CRAN
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 0.1.0
+    - fixed: 1.1.1
+  versions:
+  - 0.1.0
+  - 0.1.1
+  - 0.2.0
+  - 0.2.1
+  - 1.0.0
+  - 1.1.0
+references:
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2018-11365
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2018-11364
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2018-5698
+- type: WEB
+  url: https://github.com/WizardMac/ReadStat/issues/108
+- type: WEB
+  url: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=899335
+aliases:
+- CVE-2018-11365
+- CVE-2018-11364
+- CVE-2018-5698
+modified: "2023-10-05T05:00:00.600Z"
+published: "2023-10-05T05:00:00.600Z"
