@@ -1,0 +1,59 @@
+id: RSEC-2023-8
+details: cmark-gfm, GitHub's extended version of the CommonMark library in C, suffers from multiple vulnerabilities
+  affecting versions prior to 0.29.0.gfm.12. Various issues, including polynomial time complexity in multiple components
+  like autolink extension, handle_close_bracket, and parsing of certain text patterns (leading `>`, `-`, `_`), may lead
+  to unbounded resource exhaustion and denial of service. An out-of-bounds read in the `validate_protocol` function was
+  also identified but is considered less harmful. Patches are available in versions 0.29.0.gfm.7, 0.29.0.gfm.10, and
+  0.29.0.gfm.12. Upgrading is advised, and users unable to upgrade should validate input from trusted sources.
+affected:
+- package:
+    name: commonmark
+    ecosystem: CRAN
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0.2"
+  versions:
+  - "0.2"
+  - "0.4"
+  - "0.5"
+  - "0.6"
+  - "0.7"
+  - "0.8"
+  - "0.9"
+  - "1.0"
+  - "1.1"
+  - "1.2"
+  - "1.4"
+  - "1.5"
+  - "1.6"
+  - "1.7"
+  - "1.8"
+  - "1.9"
+references:
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2023-37463
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2023-26485
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2023-24824
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2023-22486
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2023-22485
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2023-22484
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2023-22483
+- type: WEB
+  url: https://github.com/r-lib/commonmark/issues/26
+aliases:
+- CVE-2023-37463
+- CVE-2023-26485
+- CVE-2023-24824
+- CVE-2023-22486
+- CVE-2023-22485
+- CVE-2023-22484
+- CVE-2023-22483
+modified: "2023-10-06T05:00:00.600Z"
+published: "2023-10-06T05:00:00.600Z"
