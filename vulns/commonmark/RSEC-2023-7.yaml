@@ -1,0 +1,42 @@
+id: RSEC-2023-7
+details: cmark-gfm, GitHub's extended CommonMark library, has multiple vulnerabilities. Versions prior to 0.29.0.gfm.6
+  suffer from a polynomial time complexity issue in the autolink extension, causing denial of service. Also, versions
+  before 0.29.0.gfm.3 and 0.28.3.gfm.21 contain an integer overflow in table row parsing, leading to heap corruption and
+  potential Arbitrary Code Execution. Patches are available in versions 0.29.0.gfm.6, 0.29.0.gfm.3, and 0.28.3.gfm.21.
+  Mitigations include upgrading or disabling affected extensions.
+affected:
+- package:
+    name: commonmark
+    ecosystem: CRAN
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0.2"
+    - fixed: "1.8"
+  versions:
+  - "0.2"
+  - "0.4"
+  - "0.5"
+  - "0.6"
+  - "0.7"
+  - "0.8"
+  - "0.9"
+  - "1.0"
+  - "1.1"
+  - "1.2"
+  - "1.4"
+  - "1.5"
+  - "1.6"
+  - "1.7"
+references:
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2022-39209
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2022-24724
+- type: WEB
+  url: https://github.com/r-lib/commonmark/pull/18
+aliases:
+- CVE-2022-39209
+- CVE-2022-24724
+modified: "2023-10-06T05:00:00.600Z"
+published: "2023-10-06T05:00:00.600Z"
