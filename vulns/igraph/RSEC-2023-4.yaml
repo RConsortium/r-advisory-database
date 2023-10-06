@@ -1,4 +1,4 @@
-id: RSEC-2023-3
+id: RSEC-2023-4
 details: The igraph R package, through version 0.7.1, is susceptible to a vulnerability identified in the
   igraph_i_strdiff function within igraph_trie.c. This vulnerability can lead to a NULL pointer dereference,
   potentially exploited by attackers to cause a denial of service, resulting in an application crash.
