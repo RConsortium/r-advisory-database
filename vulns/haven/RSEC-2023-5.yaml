@@ -3,6 +3,7 @@ details: The haven R package is exposed to multiple vulnerabilities due to issue
   The specific flaws include an infinite loop condition, a memory leak associated with an iconv_open call, and a
   heap-based buffer over-read via an unterminated string. Exploitation of these vulnerabilities could lead to Denial of
   Service or other undefined behaviors.
+summary: Infinite loop, memory leak, and heap-based buffer over-read vulnerabilities
 affected:
 - package:
     name: haven
@@ -34,5 +35,5 @@ aliases:
 - CVE-2018-11365
 - CVE-2018-11364
 - CVE-2018-5698
-modified: "2023-10-05T05:00:00.600Z"
+modified: "2023-10-20T07:27:00.600Z"
 published: "2023-10-05T05:00:00.600Z"

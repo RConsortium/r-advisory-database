@@ -4,6 +4,7 @@ details: cmark-gfm, GitHub's extended CommonMark library, has multiple vulnerabi
   before 0.29.0.gfm.3 and 0.28.3.gfm.21 contain an integer overflow in table row parsing, leading to heap corruption and
   potential Arbitrary Code Execution. Patches are available in versions 0.29.0.gfm.6, 0.29.0.gfm.3, and 0.28.3.gfm.21.
   Mitigations include upgrading or disabling affected extensions.
+summary: Denial of Service (DoS) and Arbitrary Code Execution (ACE) vulnerabilities
 affected:
 - package:
     name: commonmark
@@ -38,5 +39,5 @@ references:
 aliases:
 - CVE-2022-39209
 - CVE-2022-24724
-modified: "2023-10-06T05:00:00.600Z"
+modified: "2023-10-20T07:27:00.600Z"
 published: "2023-10-06T05:00:00.600Z"

@@ -4,6 +4,7 @@ details: The igraph R package, through version 0.7.1, is susceptible to a vulner
   potentially exploited by attackers to cause a denial of service, resulting in an application crash.
   Users of the igraph package should take necessary precautions and consider updating to a patched version to
   mitigate this security risk.
+summary: NULL pointer dereference vulnerability
 affected:
 - package:
     name: igraph
@@ -27,5 +28,5 @@ references:
   url: https://security-tracker.debian.org/tracker/CVE-2018-20349
 aliases:
 - CVE-2018-20349
-modified: "2023-10-04T03:23:51.600Z"
+modified: "2023-10-20T07:27:00.600Z"
 published: "2023-10-04T03:23:51.600Z"

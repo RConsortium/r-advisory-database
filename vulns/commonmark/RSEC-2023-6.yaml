@@ -3,6 +3,7 @@ details: The commonmark package, specifically in its dependency on GitHub Flavor
   has a vulnerability related to time complexity. Parsing certain crafted markdown tables can take O(n * n) time,
   leading to potential Denial of Service attacks. This issue does not affect the upstream cmark project and has been
   fixed in version 0.29.0.gfm.1.
+summary: Denial of Service (DoS) vulnerability
 affected:
 - package:
     name: commonmark
@@ -36,5 +37,5 @@ references:
   url: https://github.com/r-lib/commonmark/pull/18
 aliases:
 - CVE-2020-5238
-modified: "2023-10-06T05:00:00.600Z"
+modified: "2023-10-20T07:27:00.600Z"
 published: "2023-10-06T05:00:00.600Z"

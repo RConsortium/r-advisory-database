@@ -7,6 +7,7 @@ details: The readxl R package has been found susceptible to vulnerabilities due 
   read_MSAT_body function. This issue, stemming from inconsistent memory management in the ole2_read_header function,
   allows attackers to trigger a DoS, application crash, or possibly an unspecified impact through a specially crafted
   file.
+summary: Double-free and invalid free vulnerabilities
 affected:
 - package:
     name: readxl
@@ -34,5 +35,5 @@ references:
 aliases:
 - CVE-2018-20450
 - CVE-2018-20452
-modified: "2023-07-13T02:37:06.600Z"
+modified: "2023-10-20T07:27:00.600Z"
 published: "2023-07-13T02:37:06.600Z"
