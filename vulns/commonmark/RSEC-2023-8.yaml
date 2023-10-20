@@ -5,6 +5,7 @@ details: cmark-gfm, GitHub's extended version of the CommonMark library in C, su
   to unbounded resource exhaustion and denial of service. An out-of-bounds read in the `validate_protocol` function was
   also identified but is considered less harmful. Patches are available in versions 0.29.0.gfm.7, 0.29.0.gfm.10, and
   0.29.0.gfm.12. Upgrading is advised, and users unable to upgrade should validate input from trusted sources.
+summary: Denial of Service (DoS) vulnerabilities
 affected:
 - package:
     name: commonmark
@@ -55,5 +56,5 @@ aliases:
 - CVE-2023-22485
 - CVE-2023-22484
 - CVE-2023-22483
-modified: "2023-10-06T05:00:00.600Z"
+modified: "2023-10-20T07:27:00.600Z"
 published: "2023-10-06T05:00:00.600Z"

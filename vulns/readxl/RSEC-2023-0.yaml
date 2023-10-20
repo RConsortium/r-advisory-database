@@ -8,6 +8,7 @@ details: The readxl R package, versions 0.1.0 to 1.0.0, is vulnerable to multipl
   formula record. All these vulnerabilities can lead to memory corruption, potentially resulting in remote code
   execution. The exploit is triggered when a specially crafted XLS file, possibly sent by an attacker, is processed by
   these vulnerable functions.
+summary: Out-of-bounds write and stack based buffer overflow vulnerabilities
 affected:
 - package:
     name: readxl
@@ -54,5 +55,5 @@ aliases:
 - CVE-2017-12109
 - CVE-2017-12110
 - CVE-2017-12111
-modified: "2023-07-13T02:22:58.600Z"
+modified: "2023-10-19T01:17:00.600Z"
 published: "2023-07-13T02:22:58.600Z"
