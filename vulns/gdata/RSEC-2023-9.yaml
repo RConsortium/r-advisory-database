@@ -1,4 +1,4 @@
-id: RSEC-2023-8
+id: RSEC-2023-9
 details: Bundled Perl script Spreadsheet::ParseExcel version 0.65 is vulnerable to an arbitrary code execution (ACE)
   vulnerability due to passing unvalidated input from a file into a string-type "eval". Specifically, the issue stems
   from the evaluation of Number format strings (not to be confused with printf-style format strings) within the Excel
