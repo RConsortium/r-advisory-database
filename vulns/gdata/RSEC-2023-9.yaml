@@ -19,7 +19,6 @@ affected:
   - "2.18.0"
   - "2.18.0.1"
   - "2.19.0"
-  - "3.0.0"
 references:
 - type: WEB
   url: https://security-tracker.debian.org/tracker/CVE-2023-7101
