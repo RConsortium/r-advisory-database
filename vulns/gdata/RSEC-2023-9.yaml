@@ -1,0 +1,30 @@
+id: RSEC-2023-9
+details: Bundled Perl script Spreadsheet::ParseExcel version 0.65 is vulnerable to an arbitrary code execution (ACE)
+  vulnerability due to passing unvalidated input from a file into a string-type "eval". Specifically, the issue stems
+  from the evaluation of Number format strings (not to be confused with printf-style format strings) within the Excel
+  parsing logic. Fixed with the depreation of Excel-related functionality from gdata version 3.0.0 -- upgrading advised.
+summary: Arbitrary Code Execution (ACE) Vulnerability
+affected:
+- package:
+    name: gdata
+    ecosystem: CRAN
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "2.16.1"
+    - fixed: "3.0.0"
+  versions:
+  - "2.16.1"
+  - "2.17.0"
+  - "2.18.0"
+  - "2.18.0.1"
+  - "2.19.0"
+references:
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2023-7101
+- type: WEB
+  url: https://github.com/r-gregmisc/gdata/issues/14
+aliases:
+- CVE-2023-7101
+published: "2023-12-28T02:15:00.000Z"
+modified: "2024-01-04T02:15:00.000Z"
