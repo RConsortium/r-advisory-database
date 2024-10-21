@@ -14,6 +14,7 @@ affected:
   - type: ECOSYSTEM
     events:
     - introduced: "0.2"
+    - fixed: "1.9.2"
   versions:
   - "0.2"
   - "0.4"
@@ -32,7 +33,6 @@ affected:
   - "1.8"
   - "1.9"
   - "1.9.1"
-  - "1.9.2"
 references:
 - type: WEB
   url: https://security-tracker.debian.org/tracker/CVE-2023-37463
