@@ -36,8 +36,8 @@ references:
   url: https://security-tracker.debian.org/tracker/CVE-2022-24724
 - type: WEB
   url: https://github.com/r-lib/commonmark/pull/18
-aliases:
+upstream:
 - CVE-2022-39209
 - CVE-2022-24724
-modified: "2023-10-20T07:27:00.600Z"
+modified: "2025-05-16T00:12:44Z"
 published: "2023-10-06T05:00:00.600Z"

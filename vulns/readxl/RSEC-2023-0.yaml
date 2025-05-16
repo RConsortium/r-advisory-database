@@ -47,7 +47,7 @@ references:
   url: https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0463
 - type: WEB
   url: https://github.com/evanmiller/libxls/issues/34
-aliases:
+upstream:
 - CVE-2017-2896
 - CVE-2017-2897
 - CVE-2017-2919
@@ -55,5 +55,5 @@ aliases:
 - CVE-2017-12109
 - CVE-2017-12110
 - CVE-2017-12111
-modified: "2023-10-19T01:17:00.600Z"
+modified: "2025-05-16T00:12:44Z"
 published: "2023-07-13T02:22:58.600Z"
