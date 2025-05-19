@@ -24,7 +24,7 @@ references:
   url: https://security-tracker.debian.org/tracker/source-package/r-cran-readxl
 - type: WEB
   url: https://nvd.nist.gov/vuln/detail/CVE-2021-27836
-aliases:
+upstream:
 - CVE-2021-27836
-modified: "2023-10-20T07:27:00.600Z"
+modified: "2025-05-16T00:12:44Z"
 published: "2023-07-13T02:46:57.600Z"

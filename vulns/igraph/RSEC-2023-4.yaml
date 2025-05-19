@@ -26,7 +26,7 @@ references:
   url: https://github.com/igraph/igraph/issues/1141
 - type: WEB
   url: https://security-tracker.debian.org/tracker/CVE-2018-20349
-aliases:
+upstream:
 - CVE-2018-20349
-modified: "2023-10-20T07:27:00.600Z"
+modified: "2025-05-16T00:12:44Z"
 published: "2023-10-04T03:23:51.600Z"
