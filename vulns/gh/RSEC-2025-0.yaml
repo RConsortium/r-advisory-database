@@ -1,0 +1,27 @@
+id: RSEC-2025-0
+details: |
+ A bug was identified in releases of the GH R package prior to version 1.5. This flaw could expose sensitive information, such as authentication tokens, through request headers during its operation if responses were cached to disk. 
+ We issued a Posit Security Advisory with the 1.5 release and attributed the submitter in the release notes.
+summary: Arbitrary Code Execution (ACE) Vulnerability
+affected:
+- package:
+    name: gh
+    ecosystem: CRAN
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "1.1.0"
+    - fixed: "1.5.0"
+  versions:
+  - "1.1.0"
+  - "1.2.0"
+  - "1.2.1"
+  - "1.3.0"
+  - "1.3.1"
+  - "1.4.0"
+  - "1.4.1"
+references:
+- type: WEB
+  url: https://github.com/r-lib/gh/issues/222
+published: "2025-07-31T15:00:00Z"
+modified: "2025-07-31T15:00:00Z"
