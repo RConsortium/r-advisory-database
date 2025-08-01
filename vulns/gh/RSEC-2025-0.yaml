@@ -1,6 +1,7 @@
 id: RSEC-2025-0
-details: A bug was identified in releases of the gh R package prior to version 1.5. This flaw could expose sensitive information, such as authentication tokens, through request headers during its operation if responses were cached to disk. 
-We issued a Posit Security Advisory with the 1.5 release and attributed the submitter in the release notes.
+details: |
+ A bug was identified in releases of the GH R package prior to version 1.5. This flaw could expose sensitive information, such as authentication tokens, through request headers during its operation if responses were cached to disk. 
+ We issued a Posit Security Advisory with the 1.5 release and attributed the submitter in the release notes.
 summary: Arbitrary Code Execution (ACE) Vulnerability
 affected:
 - package:
