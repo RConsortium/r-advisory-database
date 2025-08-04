@@ -23,5 +23,9 @@ affected:
 references:
 - type: WEB
   url: https://github.com/r-lib/gh/issues/222
+- type: WEB
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-54956
+upstream:
+- CVE-2021-27836
 published: "2025-07-31T15:00:00Z"
-modified: "2025-07-31T15:00:00Z"
+modified: "2025-08-04T15:00:00Z"
