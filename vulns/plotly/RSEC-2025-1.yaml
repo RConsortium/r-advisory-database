@@ -1,7 +1,7 @@
 id: RSEC-2025-1
 details: |
  The plotly R package up through the latest 4.11.0 includes plotly.js library 2.11.1. 
- Plotly.js releases prior to version 2.5.2 have a risk of __proto__ being polluted in expandObjectPaths or nestedProperty.
+ Plotly.js releases prior to version 2.25.2 have a risk of __proto__ being polluted in expandObjectPaths or nestedProperty.
 summary: Risk of __proto__ pollution Vulnerability
 affected:
 - package:
@@ -46,4 +46,4 @@ references:
 upstream:
 - CVE-2023-46308
 published: "2025-12-23T15:00:00Z"
-modified: "2025-12-23T15:00:00Z"
+modified: "2025-12-26T22:20:00Z"
