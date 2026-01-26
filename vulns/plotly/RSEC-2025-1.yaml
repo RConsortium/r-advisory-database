@@ -11,6 +11,7 @@ affected:
   - type: ECOSYSTEM
     events:
     - introduced: "2.0.2"
+    - fixed: "4.12.0"
   versions:
   - "2.0.2"
   - "2.0.3"
@@ -43,7 +44,9 @@ references:
   url: https://github.com/plotly/plotly.R/issues/2463
 - type: WEB
   url: https://nvd.nist.gov/vuln/detail/CVE-2023-46308
+- type: WEB
+  url: https://github.com/plotly/plotly.R/pull/2471
 upstream:
 - CVE-2023-46308
 published: "2025-12-23T15:00:00Z"
-modified: "2025-12-26T22:20:00Z"
+modified: "2025-01-26T22:40:00Z"
