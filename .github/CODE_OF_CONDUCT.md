@@ -6,4 +6,4 @@ In general, this means that everyone is expected to be open, considerate, and re
 
 # Reporting
 
-All incidents should be reported by [contacting the RConsortium](https://www.r-consortium.org/contact).
+All incidents should be reported by [contacting the RConsortium](https://r-consortium.org/about/contact.html).
