@@ -1,8 +1,9 @@
 id: RSEC-2026-1
+summary: Risk of Buffer Overflow Vulnerability when installed from source on Windows R < 4.2
 details: |
  Installing the png package from source on Windows could download and install an older version of libpng that has known vulnerabilities.
- This represents a risk of buffer overflow when reading certain png files.
-summary: Risk of Buffer Overflow Vulnerability when installed from source on Windows
+ On Windows R versions < 4.2, building the png package will download an archived libpng 1.5.4 from 2011. Note that on R versions 4.2 or newer, libpng is bundled in the relevant Rtools42+ and is not downloaded during png package installation. Check the Rtools release notes to see if the vulnerability applies.
+ Where the vulnerable libpng is used, this represents a risk of buffer overflow when reading certain png files.
 affected:
 - package:
     name: png
